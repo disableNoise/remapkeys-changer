@@ -17,7 +17,7 @@ def bye(sysTrayIcon):
     print ('Bye, then.')
 def tecladogrande(sysTrayIcon):
     shutil.copyfile(teclado2, teclado)
-menu_options = (('Skyloong SK64', "hello.ico", tecladochico),
+menu_options = (('Skyloong SK64', None, tecladochico),
                 ('Ozone Strike Battle', None, tecladogrande),
                )
 sysTrayIcon = SysTrayIcon("teclado.ico", hover_text, menu_options, on_quit=bye, default_menu_index=1)
