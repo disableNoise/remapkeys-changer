@@ -2,9 +2,9 @@
 
 import shutil
 
-teclado1 = r'C:\Program Files (x86)\Steam\steamapps\common\Worms Armageddon\RemapsFiles\tecladochico.ini'
-teclado2 = r'C:\Program Files (x86)\Steam\steamapps\common\Worms Armageddon\RemapsFiles\tecladogrande.ini'
-teclado = r'C:\Program Files (x86)\Steam\steamapps\common\Worms Armageddon\RemapKeys.ini'
+teclado1 = 'tecladochico.ini'
+teclado2 = 'tecladogrande.ini'
+teclado = r'..\RemapKeys.ini'
 
 from infi.systray import SysTrayIcon
 hover_text = "Remapkey.ini changer"
@@ -20,5 +20,5 @@ def tecladogrande(sysTrayIcon):
 menu_options = (('Skyloong SK64', "hello.ico", tecladochico),
                 ('Ozone Strike Battle', None, tecladogrande),
                )
-sysTrayIcon = SysTrayIcon("main.ico", hover_text, menu_options, on_quit=bye, default_menu_index=1)
+sysTrayIcon = SysTrayIcon("teclado.ico", hover_text, menu_options, on_quit=bye, default_menu_index=1)
 sysTrayIcon.start()
