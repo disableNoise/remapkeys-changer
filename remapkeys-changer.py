@@ -11,10 +11,8 @@ hover_text = "Remapkey.ini changer"
 
 def tecladochico(sysTrayIcon):
     shutil.copyfile(teclado1, teclado)
-def simon(sysTrayIcon):
-    print ("Hello Simon.")
 def bye(sysTrayIcon):
-    print ('Bye, then.')
+    print ('Chau.')
 def tecladogrande(sysTrayIcon):
     shutil.copyfile(teclado2, teclado)
 menu_options = (('Skyloong SK64', None, tecladochico),
